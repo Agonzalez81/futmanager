@@ -24,8 +24,9 @@ class FileUploadController extends Controller
 
 
         /*
-        $name = $request->file('file')->getClientOriginalName();
-        $path = $request->file('file')->store('public/files');
+        $comment_old = $request->file('file')->getClientOriginalName();
+        $comment = $comment_old + file('new_comment')
+        
         */
         // Obtiene el contenido del fichero
         $contenido = $request->file('file')->getContent();
